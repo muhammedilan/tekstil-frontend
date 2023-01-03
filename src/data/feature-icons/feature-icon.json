@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/img/icon-img/support-1.png",
+    "title": "Ücretsiz Kargo",
+    "subtitle": "Tüm ürünlerde geçerli"
+  },
+  {
+    "id": 2,
+    "image": "/assets/img/icon-img/support-2.png",
+    "title": "Kesintisiz Destek",
+    "subtitle": "Sorun mu yaşadın bize ulaş"
+  },
+  {
+    "id": 3,
+    "image": "/assets/img/icon-img/support-3.png",
+    "title": "Koşulsuz Para İadesi",
+    "subtitle": "14 gün içerisinde para iadesi"
+  },
+  {
+    "id": 4,
+    "image": "/assets/img/icon-img/support-4.png",
+    "title": "İndirim Kuponları",
+    "subtitle": "Tüm ürünlerde geçerli indirim kuponları"
+  }
+]

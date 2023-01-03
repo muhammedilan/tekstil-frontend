@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkflone_react=self.webpackChunkflone_react||[]).push([[4884],{7371:function(e,c,n){n.r(c);n(2791);var t=n(1105),r=n(184);c.default=function(){return(0,r.jsx)("div",{children:(0,t.t)("cookie_policy")})}}}]);
+//# sourceMappingURL=4884.509a793d.chunk.js.map

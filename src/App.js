@@ -103,10 +103,10 @@ const CreateCollection = lazy(() =>
 
 const Home = lazy(() => import(pagesAdmin + "home"));
 
-const isProduction = "development";
+const isProduction = process.env.NODE_ENV?.trim() == "production";
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "https://polintextile.com/";
+axios.defaults.baseURL = "https://tekstil-frontend.web.app/";
 
 const App = () => {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -116,19 +116,13 @@ const App = () => {
   let dispatch = useDispatch();
 
   useEffect(() => {
-    axios
-      .get("/category", {
-        headers: { "Content-Type": "application/json" },
-      })
-      .then((res) => {
-        console.log(res);
-        setCategories(res.data);
-      });
+    axios.get("/category").then((res) => {
+      console.log(res);
+      setCategories(res.data);
+    });
 
     axios
-      .get("auth", {
-        headers: { "Content-Type": "application/json" },
-      })
+      .get("auth")
       .then((res) => {
         console.log(res.data);
         if (res.status === 200) {

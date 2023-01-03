@@ -106,7 +106,7 @@ const Home = lazy(() => import(pagesAdmin + "home"));
 const isProduction = process.env.NODE_ENV?.trim() == "production";
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "https://tekstil-frontend.web.app/";
+axios.defaults.baseURL = "https://tekstil-backend.web.app/";
 
 const App = () => {
   const [isAdmin, setIsAdmin] = useState(false);
